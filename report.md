@@ -33,7 +33,7 @@ void addGaussianNoise(Bitmap *g, double mju, double sigma) {
 mju = 10|![](lena_gn11.bmp)|![](lena_gn12.bmp)
 mju = -10|![](lena_gn21.bmp)|![](lena_gn22.bmp)
 
-* （针对上面sigma=10,mju=10的那幅图像）下面分别采用空域中值（5*5）、空域高斯（5*5）和频域巴特沃斯（r=120,二阶）这三种平滑（低通）滤波器进行处理，主函数代码如下，其中有关BMP位图的操作可以在[bitmap.cpp](bitmap.cpp)中找到，三种滤波器都在[第四次作业](bitmap.cpp)和[第五次作业](bitmap.cpp)中出现过，这里复用了以前的代码，详见[hw6.cpp](hw6.cpp) - part 2,3,4.
+* （针对上面sigma=10,mju=10的那幅图像）下面分别采用空域中值（5*5）、空域高斯（5*5）和频域巴特沃斯（r=120,二阶）这三种平滑（低通）滤波器进行处理，主函数代码如下，其中有关BMP位图的操作可以在[bitmap.cpp](bitmap.cpp)中找到，三种滤波器都在[第四次作业](https://github.com/phaqew/hw4/blob/master/%E7%AC%AC4-%E6%AC%A1%E4%BD%9C%E4%B8%9A/report.md)和[第五次作业](https://github.com/phaqew/hw5/blob/master/report.md)中出现过，这里复用了以前的代码，详见[hw6.cpp](hw6.cpp) - part 2,3,4.
 ```
 #include "hw6.cpp"
 int main(){
